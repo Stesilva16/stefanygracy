@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Locadora 2000</title>
+	
+	<!-- arquivo CSS próprio-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- Java Script -->
+
+	<script type="text/javascript" src="javascript.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<!-- Menu Navbar-->
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			
+			<!-- Imagem e Título -->
+			<img style="width:3%;" src="img/claquete.png">
+			<a class="navbar-brand" href="#topo">Locadora 2000</a>
+			<!-- Div com itens clicáveis -->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" href="#tabFilmes">Filmes Disponíveis</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#drop" id="dropGeneros" role="button" data-bs-toggle="dropdown" > Filmes por Categoria </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#gAcao">Ação		</a></li>
+							<li><a class="dropdown-item" href="#gAnim">Animação	</a></li>
+							<li><a class="dropdown-item" href="#gRom">Romance	</a></li>
+							<li><a class="dropdown-item" href="#gSus">Suspense	</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<!-- Titulo Locadora -->
+	<h1 class="display-1 text-center mb-5">Locadora 2000</h1>
+
+	<!-- Tabela filmes disponíveis -->
+	<div class="container">
+		<table class="table table-striped table-hover">
+			<!-- Linha com títulos das colunas -->
+			<thead>
+				<tr>
+					<th scope="col">Código					</th>
+					<th scope="col">Título					</th>
+					<th scope="col">Diretor					</th>
+					<th scope="col">Lançamento				</th>
+					<th scope="col">Gênero					</th>
+					<th scope="col">Ator/Atriz Principal	</th>
+					<th scope="col">Nota IMDb				</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAcao">Ação</th>
+				</tr>
+				<!-- Primeiro filme -->
+			  	<tr>
+					<th scope="row">1</th>
+					<td>Batman: O Cavaleiro das Trevas</td>
+					<td>Christopher Nolan</td>
+					<td>18 de julho de 2008</td>
+					<td>Ação</td>
+					<td>Christian Bale</td>
+					<td>9,0/10</td>
+				</tr>
+				<!-- Segundo filme -->
+				<tr>
+					<th scope="row">2</th>
+					<td>O Império Contra-Ataca</td>
+					<td>Irvin Kershner</td>
+					<td>21 de julho de 1980</td>
+					<td>Ação</td>
+					<td>Mark Hamill</td>
+					<td>8,7/10</td>
+				</tr>
+				<!-- Terceiro filme -->
+				<tr>
+					<th scope="row">3</th>
+					<td>Matrix</td>
+					<td>Lana Wachowski, Lilly Wachowski</td>
+					<td>21 de maio de 1999</td>
+					<td>Ação</td>
+					<td>Keanu Reeves</td>
+					<td>8,7/10</td>
+				</tr>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnim">Animação</th>
+				</tr>
+				<!-- Quarto Filme filme -->
+			  	<tr>
+			  		<th scope="row">4</th>
+			    	<td>A Viagem de Chihiro</td>
+			    	<td>Hayao Miyazaki</td>
+					<td>18 de julho de 2003</td>
+					<td>Animação</td>
+					<td>Rumi Hiiragi (voz)</td>
+					<td>8,6/10</td>
+				</tr>
+				<!-- Quinto filme -->
+				<tr>
+					<th scope="row">5</th>
+					<td>O Rei Leão</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>8 de julho de 1994</td>
+					<td>Animação</td>
+					<td>James Earl Jones (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+				<!-- Sexto filme -->
+				<tr>
+					<th scope="row">6</th>
+					<td>Túmulo dos Vagalumes</td>
+					<td>Isao Takahata</td>
+					<td>24 de novembro de 1989</td>
+					<td>Animação</td>
+					<td>TSUTOMU TATSUMI (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gRom">Romance</th>
+				</tr>
+				<!-- Sétimo Filme -->
+			  	<tr>
+			  		<th scope="row">7</th>
+			    	<td>Dirty Dancing: ritmo quente</td>
+			    	<td>Emile Ardolino</td>
+					<td>25 de setembro de 1987</td>
+					<td>Romance</td>
+					<td>Jennifer Grey, Patrick Swayze</td>
+					<td>7/10</td>
+				</tr>
+				<!-- Oitavo filme -->
+				<tr>
+					<th scope="row">8</th>
+					<td>Ghost: do outro lado da vida</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>8 de julho de 1994</td>
+					<td>Romance</td>
+					<td>Demi Moore, Patrick Swayze</td>
+					<td>7,1/10</td>
+				</tr>
+				<!-- Nono filme -->
+				<tr>
+					<th scope="row">9</th>
+					<td>Amor à segunda vista</td>
+					<td>Marc Lawrence</td>
+					<td>12 de dezembro de 2002</td>
+					<td>Romance</td>
+					<td>Sandra Bullock</td>
+					<td>6,1/10</td>
+				</tr>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gSus">Suspense</th>
+				</tr>
+				<!-- Décimo Filme -->
+			  	<tr>
+			  		<th scope="row">10</th>
+			    	<td>Cidade de Deus</td>
+			    	<td>Fernando Meirelles, Kátia Lund</td>
+					<td>30 de agosto de 2002</td>
+					<td>Suspense</td>
+					<td>Alexandre Rodrigues</td>
+					<td>8,6/10</td>
+				</tr>
+				<!-- 11 filme -->
+				<tr>
+					<th scope="row">11</th>
+					<td>Garota Exemplar</td>
+					<td>David Fincher</td>
+					<td>2 de outubro de 2014</td>
+					<td>Suspense</td>
+					<td>Rosamund Pike</td>
+					<td>8,1/10</td>
+				</tr>
+				<!-- 12 filme -->
+				<tr>
+					<th scope="row">12</th>
+					<td>Corra!</td>
+					<td>Jordan Peele</td>
+					<td>18 de maio de 2017</td>
+					<td>Suspense</td>
+					<td>Daniel Kaluuya</td>
+					<td>8,6/10</td>
+				</tr>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gDrama">Drama</th>
+				</tr>
+				<!-- 13 Filme -->
+			  	<tr>
+			  		<th scope="row">13</th>
+			    	<td>Um Sonho de Liberdade</td>
+			    	<td>Frank Darabont</td>
+					<td>17 de março de 1995</td>
+					<td>Drama</td>
+					<td>Morgan Freeman</td>
+					<td>9,3/10</td>
+				</tr>
+				<!-- 14 filme -->
+				<tr>
+					<th scope="row">14</th>
+					<td>O Poderoso Chefão</td>
+					<td>Francis Ford Coppola</td>
+					<td>7 de julho de 1972</td>
+					<td>Drama</td>
+					<td>Al Pacino</td>
+					<td>9,2/10</td>
+				</tr>
+				<!-- 15 filme -->
+				<tr>
+					<th scope="row">15</th>
+					<td>Steven Spielberg</td>
+					<td>Jordan Peele</td>
+					<td>31 de dezembro de 1993</td>
+					<td>Drama</td>
+					<td>Liam Neeson</td>
+					<td>9,0/10</td>
+				</tr>
+				<!-- Linha expandida com gênero do filme -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gCom">Comédia</th>
+				</tr>
+				<!-- 16 Filme -->
+			  	<tr>
+			  		<th scope="row">16</th>
+			    	<td>Pulp Fiction: Tempo de Violência</td>
+			    	<td>Quentin Tarantino</td>
+					<td>18 de fevereiro de 1995</td>
+					<td>Comédia</td>
+					<td>John Travolta</td>
+					<td>8,9/10</td>
+				</tr>
+				<!-- 17 filme -->
+				<tr>
+					<th scope="row">17</th>
+					<td>Apertem os Cintos, o Piloto Sumiu</td>
+					<td>Jim Abrahams, David Zucker, Jerry Zucker</td>
+					<td>26 de dezembro de 1980</td>
+					<td>Comédia</td>
+					<td>Robert Hays</td>
+					<td>7,7/10</td>
+				</tr>
+				<!-- 18 filme -->
+				<tr>
+					<th scope="row">18</th>
+					<td>Os Caça-Fantasmas</td>
+					<td>Ivan Reitman</td>
+					<td>20 de dezembro de 1984</td>
+					<td>Comédia</td>
+					<td>Bill Murray</td>
+					<td>7,8/10</td>
+				</tr>
+				<!-- 19 filme adicionado -->
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAdd">Adicionados Recentemente</th>
+				</tr>
+				<tr id="inserirTabela">
+					
+				</tr>
+			</tbody>
+		</table>
+		<!-- Final da tabela -->
+	</div>
+
+	<!-- Divisor de página -->
+	<div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<h2 class="text-center mb-5">Cadastro de Filmes</h2>
+
+	<div class="container mb-5">
+		<!-- Adicionar nome ao form-->
+		<!-- Adicionar event.preventDefault() ao form-->
+		<form name="cadastrar" onsubmit="event.preventDefault()">
+			<!-- Linha código e data lançamento -->
+			<div class="row">
+				<!-- código -->
+				<div class="mb-3 col">
+					<!-- Adicionar nome ao input-->
+					<!-- Adicionar required ao input-->
+					<label for="codFilme" class="form-label">Código: </label>
+					<input type="text" id="codFilme" class="form-control" placeholder="00" name="codigo" required>
+				</div>
+				<!-- data lançamento -->
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Ano: </label>
+					<input type="date" id="anoFilme" class="form-control" name="data" required>
+				</div>
+			</div>
+
+			<!-- linha do título e diretor -->
+			<div class="row">
+				<!-- titulo -->
+				<div class="mb-3 col">
+					<label for="titFilme" class="form-label">Título: </label>
+					<input type="text" id="titFilme" class="form-control" name="titulo" required>
+				</div>
+				<!-- diretor -->
+				<div class="mb-3 col">
+					<label for="dirFilme" class="form-label">Diretor: </label>
+					<input type="text" id="dirFilme" class="form-control" name="diretor" required>
+				</div>
+			</div>
+
+			<!-- linha do ator/atriz e imdb -->
+			<div class="row">
+				<!-- ator atriz -->
+				<div class="mb-3 col">
+					<label for="atorFilme" class="form-label">Ator/Atriz principal: </label>
+					<input type="text" id="atorFilme" class="form-control" name="ator" required>
+				</div>
+				<!-- nota IMDb -->
+				<div class="mb-3 col">
+					<label for="notaFilme" class="form-label">Nota IMDb: </label>
+					<input type="number" id="notaFilme" class="form-control" name="nota" required>
+				</div>
+			</div>
+
+			<!-- linha Gêneros -->
+			<div class="row">
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenAcao" class="form-check-input" value="Ação" required>
+					<label for="radGenAcao" class="form-label">Ação</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenAnim" class="form-check-input" value="Animação" required>
+					<label for="radGenAnim" class="form-label">Animação</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenRom" class="form-check-input" value="Romance" required>
+					<label for="radGenRom" class="form-label">Romance</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenSus" class="form-check-input" value="Suspense" required>
+					<label for="radGenSus" class="form-label">Suspense</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenCom" class="form-check-input" value="Comédia" required>
+					<label for="radGenCom" class="form-label">Comédia</label>
+				</div>
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenDra" class="form-check-input" value="Drama" required>
+					<label for="radGenDra" class="form-label">Drama</label>
+				</div>
+			</div>
+			<!-- fim da linha generos -->
+
+			<!-- Botão Enviar -->
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3" onclick="insere()">Cadastrar</button>
+			</div>
+
+		</form>
+		<!-- fim do form -->
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Forca</title>
+</head>
+
+<body>
+    <header>
+         <img src="logo.png" alt="Logo do site: letra A de Alura" id="logo">
+    </header>
+    <main>
+        <section class="forca">
+            <div class="boneco">
+                <canvas width="600" height="300"></canvas>
+            </div>
+
+            <textarea id="input" model="input" autofocus placeholder="Digite seu texto"
+                style="display: none;"></textarea>
+            <div id="image-forca">
+                <img src="forca.JPEG" alt="Imagem da forca.">
+            
+            <div class="palavra" id="palavra">
+                <span>F</span>
+                <span>O</span>
+                <span>R</span>
+                <span>C</span>
+                <span>A</span>
+            </div>
+
+            <div class="letras-erradas" id="letras-erradas">
+            </div>
+
+        </section>
+
+        <section class="botoes">
+            <button id="iniciar-jogo">Iniciar jogo</button>
+            <button id="nova-palavra">Adicionar nova palavra</button>
+        </section>
+    </main>
+<!-- RODAPÉ -->
+    <footer class="rodape"><p>Stefany Gracy - Challenge Forca | Turma 3 | One Next Education - Alura/Oracle</p></footer>
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>

@@ -1,0 +1,131 @@
+body{
+	background:darkgrey; 
+	font-family:sans-serif;
+	
+	/* alinhamento e o tamanho */
+	width: 85%;
+	margin: auto;
+	}
+
+section{
+	background-color: #F5CBAA;
+	text-align: justify;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+	border-radius: 15px;
+	}
+
+#h1{
+	text-align: center;
+	color:#76D7C4;
+	}
+
+#topo{
+	padding: 20px;
+	margin-bottom: 0px;
+}
+
+#h4{
+	text-align: center; 
+	color:#F5CBAA;
+	}
+
+p{
+	text-align: justify;
+	text-indent: 50px;
+	padding-left: 256px;
+	padding-right: 256px;
+	padding-top: 64px;
+	padding-bottom: 64px;
+}
+
+.titulo-livro {
+	background-color:CadetBlue; 
+	text-align: center; 
+	color: #76D7C4 ;
+	border-radius: 15px;	
+	}
+.psin {
+	background-color: #56BEA5   ;
+	font-family:sans-serif
+	text-align: left;
+	color: Honeydew;
+	border-radius: 15px;
+	}
+
+#sumario{
+	color:#D1F2EB;
+		}
+th{
+	background-color: #117A65;
+	color:#AEB6BF ;
+	text-align: center;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #AEB6BF;
+	border-radius: 5px;
+
+}
+
+td{
+	background-color:#D1F2EB;
+	color:#34495E;
+	text-align: center;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #AEB6BF;
+	border-radius: 5px;
+}
+
+img{
+	width:40%;
+	background-color:black;
+	display:  block;
+	margin: auto;
+	border-radius: 30px;
+
+}
+
+li{
+	color: #B46324;
+	font-weight: bold;
+}
+
+a{
+	color: #B46324;
+}
+
+a:link{
+	color: #E7CCB7;
+}
+
+a:visited{
+	color: #904F1D;
+}
+
+a:hover{
+	color: chocolate;
+}
+
+a:active{
+	color: #C6A58B;
+}
+.hsinopse{
+	text-align: center; 
+	color:WhiteSmoke;
+
+}
+
+span{
+	color:Chocolate;
+	font-weight: bold;
+}
+
+ol{
+	text-align: center;
+	list-style-position:inside;
+/*esse é para você justificar os pontos da listas juntos*/
+}
+

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace,'Courier New', Courier, monospace;
+}
+
+body {
+    width: 100vw;
+    background: #5F9EA0;
+}
+
+* Sessão da Logo */
+header {
+    display: flex;
+}
+
+#logo {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 50px;
+    heed:20px;
+}
+
+main {
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0 10px;
+}
+
+#image-forca img {
+    width: 17.5%;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+    border-radius: 15%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.palavra span, .letras-erradas span {
+    margin: 0 5px;
+    border-bottom: solid 1px #fff;
+    color: #FFFAF0;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-family: 'Source Code Pro', monospace,'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    text-align: center;
+    height: 58px;
+}
+
+.letras-erradas span {
+    font-size: 1em;
+    border: none;
+}
+
+.forca .letras-erradas {
+    font-size: 20px;
+    margin: 40px 0;
+    color: #FFFAF0;
+}
+
+textarea {
+    overflow: hidden;
+    resize: none;
+    font-size: 2em;
+    padding: 180px 10px;
+    color: #F7E4E0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: #F7E4E0;
+}
+
+button {
+    border: solid 1px #fff;
+    border-radius: 1em;
+    padding: 20px 45px;
+    font-size: 1em;
+    background: #20B2AA;
+    color: #FFFAF0;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.botoes {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+}
+
+button:first-child {
+    background: #20B2AA;
+    color: #FFFAF0;
+    border: solid 1px #fff;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    position: absolute;
+    top: 632px;
+    background-color: #20B2AA;
+    color: #FFFAF0;
+    font-weight: lighter;
+    font-size: 10px;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    text-align: center;
+}
